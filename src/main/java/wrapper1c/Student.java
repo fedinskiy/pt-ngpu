@@ -9,19 +9,19 @@ import java.util.Date;
 
 /**
  * Created by owlowl on 22.11.16.
+ * пример и
  */
 @IsNotesDocument(useAllFields = true)
 public class Student{
-	@IsNotesItem(name = "FIO")
-	private String name;
-	@IsNotesItem(type = ItemDataType.DATE)
-	private Date birthday;
-	private String unimplemented;
-	
-	public Student(String name, Date birthday) {
-		this.name = name;
-		this.birthday = birthday;
-		unimplemented="wowwowwow";
-	}
-	
+  @IsNotesItem(name = "FIO")
+  public String name;
+  @IsNotesItem(type = ItemDataType.DATE)
+  public Date birthday;
+  private String unimplemented;
+
+  public Student(String name, Date birthday) {
+	this.name = name;
+	this.birthday = birthday;
+	unimplemented="wowwowwow";
+  }
 }
